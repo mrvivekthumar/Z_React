@@ -12,10 +12,11 @@ function SingleProduct({ product }) {
   const curQuantity = curItem ? curItem.quantity : 0;
 
   return <div className="SingleProduct">
-    <img className="productImg" src={product.imgges[0]} alt={product.title} />
+    <img className="productImg" src={product.images[0]} alt={product.title} />
     <div className="productInfo">
       <h2 className="productTitle">{product.title}</h2>
       <p className="productPrice">{product.price}</p>
+      <p>Category : {product.category.name}</p>
     </div>
     <div className="cartInfo">
       <button className="button" onClick={() => { dispatch(removeFromCart(product.id)) }}>-</button>

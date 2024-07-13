@@ -5,12 +5,12 @@ import { useSelector } from "react-redux";
 
 function NavBar() {
 
-  const cart = useSelector((state)=> state.cartReducer.cart);
+  const cart = useSelector((state) => state.cartReducer.cart);
 
-  let count  = 0;
+  let count = 0;
 
   cart.forEach((item) => {
-      count += item.quantity;
+    count += item.quantity;
   });
 
   return (
@@ -19,7 +19,7 @@ function NavBar() {
       <div className="right-layout">
         <div className="cart-layout">
           <AiOutlineShoppingCart />
-          <h3>4</h3>
+          <h3>{count}</h3>
         </div>
       </div>
     </nav>
