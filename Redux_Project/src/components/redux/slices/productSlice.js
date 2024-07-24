@@ -12,11 +12,6 @@ const productSlice = createSlice({
     status: 'idle',
     error: null,
   },
-  // reducers: {
-  //   loadProducts: (state, action) => {
-  //     state.products = action.payload;
-  //   },
-  // },
   extraReducers: function (builder) {
     builder.addCase(fetchData.pending, (state, action) => {
       state.status = 'loading';
