@@ -9,9 +9,7 @@ function NavBar() {
 
   let count = 0;
 
-  cart.forEach((item) => {
-    count += item.quantity;
-  });
+  cart.forEach((item) => count += item.quantity);
 
   return (
     <nav>
