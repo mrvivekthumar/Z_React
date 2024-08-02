@@ -1,0 +1,3 @@
+we can get data form input using two way 
+1. using reference ==>  const inputRef = useRef(null);
+2. using state management ==> const [state, setState] = useState(initialState);
