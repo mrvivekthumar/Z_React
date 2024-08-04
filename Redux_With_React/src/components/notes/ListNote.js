@@ -10,13 +10,13 @@ function ListNote() {
     <div>
       {notes.map((note) => {
         return (
-          <div>
+          <div key={note.id}>
             <p>{note.id}</p>
             <h2>{note.title}</h2>
-            <p>{note.Desc}</p>
-            <button onClick={() => dispatch(deleteNote(note.id))}>
+            <p>{note.desc}</p>
+            {/* <button onClick={() => dispatch(deleteNote(note.id))}>
               Delete
-            </button>
+            </button> */}
           </div>
         );
       })}

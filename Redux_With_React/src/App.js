@@ -7,10 +7,10 @@ import ListNote from "./components/notes/ListNote";
 function App() {
   return (
     <div className="App">
-      <Child1 />
-      <Child2 />
-      {/* <CreateNote />
-      <ListNote /> */}
+      {/* <Child1 />
+      <Child2 /> */}
+      <CreateNote />
+      <ListNote />
     </div>
   );
 }

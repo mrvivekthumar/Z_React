@@ -25,12 +25,12 @@ function CreateNote() {
       <form onClick={handleSubmit}>
         <input
           placeholder="title here"
-          onChange={(e) => setTitle.target.value}
+          onChange={(e) => setTitle(e.target.value)}
           type="text"
         />
         <input
           placeholder=" description here"
-          onChange={(e) => setDesc.target.value}
+          onChange={(e) => setDesc(e.target.value)}
           type="text"
         />
         <input type="submit" onClick={handleSubmit} />

@@ -6,7 +6,10 @@ const notesSlice = createSlice({
     notes: [],
   },
   reducers: {
-    creatNote: (state, action) => {
+    createNote: (state, action) => {
+      // Previous time we done using this way
+      // state.notes = [...state.notes,action.payload]
+
       state.notes.push(action.payload);
     },
     deleteNote: (state, action) => {
